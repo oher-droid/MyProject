@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Anton SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #423F3E;
+    scroll-behavior: smooth;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding-top: 15px;
+    background-color: #2B2B2B;
+    padding-bottom: 15px;
+    position: fixed;
+    width: 100%;
+}
+.navbar .nav-list{
+    display: flex;
+}
+.navbar{
+    padding-right:30px;
+}
+.nav-list li{
+    margin-inline: 10px;
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    padding-left: 250px;
+    color: whitesmoke;
+}
+.yellow{
+    color: #f5ce45;
+}
+.home-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    gap: 50px;
+    color: whitesmoke;
+}
+.introduction{
+    width: 500px;
+}
+.first-sentence{
+    color:#f5ce45;
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+.one-p{
+    text-align: justify;
+    text-indent: 20px;
+    padding-bottom: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+.myPic{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+.bttn-contact{
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: #f5ce45;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+/*---About---*/
+
+.about-content{
+    width: 80%;
+    margin: 200px auto;
+    height: 1050px;
+    padding: 20px;
+    box-shadow: 0 20px 20px 15px rgba(230, 227, 227, 0.3);
+    color: whitesmoke;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.resume-header{
+    text-align: center;
+}
+
+.resume h1{
+    margin-bottom: 10px;
+}
+
+.resume h3{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+ 
+}
+
+.img-area{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 25px auto;
+    border: 15px groove #f5ce45;
+}
+
+.img-area img{
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left{
+    flex: 1;
+    padding: 30px;
+}
+
+.left p{
+    line-height: 2;
+}
+
+.left ul li{
+    line-height: 2;
+    list-style-type: none;
+}
+
+
+h2{
+    background-color: #2B2B2B;
+    padding: 15px;
+    color: #f5ce45;;
+    margin: 30px 0;
+    font-size: 20px;
+    border-radius: 0 50px 50px 0;
+    font-family: "Anton SC", serif;
+}
+
+.right{
+    flex: 1;
+    padding: 30px;
+}
+
+.long-p{
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.ojt{
+    padding-bottom: 3px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+
+.certifications-section {
+    padding: 50px 20px;
+    color: white;
+    text-align: center; /* Center the heading */
+}
+
+/* Center the Certifications heading */
+.certifications-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Center the certifications container */
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between items */
+    max-width: 1000px; /* Limit the container width */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Style for individual certification item */
+.certification {
+    width: calc(33.333% - 20px); /* 3 items per row, accounting for gaps */
+    text-align: center; /* Center the images */
+}
+
+/* Image styling */
+.cert-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cert-img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Make images responsive */
+@media (max-width: 768px) {
+    .certification {
+        width: calc(50% - 20px); /* 2 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .certification {
+        width: 100%; /* 1 item per row on very small screens */
+    }
+}
+
+.certification-header{
+    padding-bottom: 20px;
+}
